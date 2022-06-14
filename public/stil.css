@@ -1,0 +1,212 @@
+* {box-sizing: border-box;}
+
+body {
+  max-width: 1400px;
+  margin: 20px auto;
+  padding: 0 20px;
+  font-family: "Verdana", serif;
+}
+
+.tablica {
+  border-collapse: collapse;
+  text-align: center;
+  width: 100%
+}
+
+.tablica td, .tablica th {
+  border: 1px solid #ddd;
+  padding: 8px
+}
+
+.tablica tr:nth-child(even){background-color: #f2f2f2}
+
+.tablica tr:hover {background-color: #ddd}
+
+.tablica th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #A69C14;
+  color: #F0F0F2
+}
+
+.obavijest {
+  color: blue;
+  font-size:larger;
+  font-weight: bold;
+}
+
+.obavijest_critical {
+  color: red;
+  font-size:larger;
+  font-weight: bold;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #025E73;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #F0F0F2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #033540;
+}
+
+.form-inline {  
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.form-inline label {
+  margin: 5px 10px;
+}
+
+.form-inline input {
+  vertical-align: middle;
+  margin: 5px 10px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.form-inline select {
+  vertical-align: middle;
+  margin: 5px 10px;
+  padding: 10px;
+  color: #fff;
+  background-color: #025E73;
+  border: 1px solid #ddd;
+}
+
+.form-inline button {
+  margin: 5px 10px;
+  padding: 10px 20px;
+  background-color: #025E73;
+  border: 1px solid #ddd;
+  color: white;
+  cursor: pointer;
+}
+
+.form-inline button:hover {
+  background-color: #033540;
+}
+
+@media (max-width: 800px) {
+  .form-inline input {
+    margin: 10px 0;
+  }
+  
+  .form-inline {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+footer {
+  text-align: center;
+}
+
+.detalji_pjesme {
+  font-size: medium;
+  padding: 2px;
+}
+
+.forma {
+  max-width: 60%;
+  margin: 0 auto;
+}
+.forma input,
+textarea {
+  display: block;
+  width: 100%;
+
+  margin: 10px 0;
+  padding: 8px;
+}
+
+.forma select {
+  vertical-align: middle;
+  margin: 5px 10px;
+  padding: 10px;
+  color: #fff;
+  background-color: #025E73;
+  border: 1px solid #ddd;
+}
+
+.forma label {
+  display: block;
+  margin-top: 24px;
+}
+
+.forma button {
+  margin-top: 20px;
+  background-color: #033540;
+  color: white;
+  padding: 6px;
+  border: 0;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.forma button:hover {
+  background-color: #025E73;
+}
+
+.button-red {
+  margin-top: 5px;
+  background-color: rgba(255, 0, 0, 0.5);
+  color: white;
+  padding: 7px;
+  border: 0;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 10%;
+}
+
+.button-red:hover {
+  background-color: rgba(255, 0, 0, 0.8);
+}
+
+.button-green {
+  margin-top: 5px;
+  background-color: rgba(0, 255, 0, 0.5);
+  color: black;
+  padding: 7px;
+  border: 0;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 10%;
+}
+
+.button-green:hover {
+  background-color: rgba(0, 255, 0, 0.8);
+}
+
+.button-blue {
+  margin-top: 5px;
+  background-color: rgba(0, 0, 255, 0.5);
+  color: white;
+  padding: 7px;
+  border: 0;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 10%;
+}
+
+.button-blue:hover {
+  background-color: rgba(0, 0, 255, 0.8);
+}

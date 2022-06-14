@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>O autoru</title>
+		<meta name="autor" content="Zlatko Pračić"/>
+		<meta name="datum" content="17.06.2022."/>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="public/stil.css">
+	</head>
+	<body>
+        <header>
+            <p><strong>Dobrodošli!</strong></p>
+        <ul>
+            <li><a class='active' href='index.php'>Nazad na aplikaciju</a></li>
+        </ul>
+        <div>
+            <p>ime: Zlatko</p>
+            <p>prezime: Pračić</p>
+            <p>JMBAG: 0016145097</p>
+            <p>email: <a href="mailto:zpracic@foi.hr">zpracic@foi.hr</a></p>
+            <p>centar: Varaždin</p>
+            <p>godina: 2021</p>
+            <img src="public/zpracic.jpg" alt="Zlatko Pračić" width="300" height="400">
+        </div>
+    </body>
+    <footer>
+        <p>&copy Zlatko Pračić | <a href="mailto:zpracic@foi.hr">zpracic@foi.hr</a> | <span id="godina"></span></p><br>
+
+        <script>
+        const d = new Date();
+        let year = d.getFullYear();
+        document.getElementById("godina").innerHTML = year;
+        </script>
+
+    </footer>
+</html>
+
+
+
